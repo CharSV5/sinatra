@@ -20,7 +20,7 @@ get '/random-cat' do
 end
 
 get '/named-cat' do
-  @color = params[:color]
+  p params
   @name = params[:name]
   erb(:index)
 end
