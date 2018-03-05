@@ -15,5 +15,6 @@ get '/hello' do
 end
 
 get '/cat' do
+  @name = ["charlene", "alice", "lucy"].sample
   erb(:index)
 end
